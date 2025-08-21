@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>College Fest</title>
+  <style>
+    :root { --bg:#0f172a; --fg:#e2e8f0; --brand:#3b82f6; --card:#111827; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--fg)}
+    header{background:#0b1222;padding:20px 16px;position:sticky;top:0;z-index:10}
+    header .wrap{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+    nav a{color:var(--fg);text-decoration:none;margin-left:16px;opacity:.9}
+    nav a:hover{opacity:1;text-decoration:underline}
+    .hero{max-width:1100px;margin:40px auto;padding:0 16px;text-align:center}
+    .hero h1{margin:0 0 10px}
+    .hero p{margin:0 0 24px;opacity:.9}
+    .btn{display:inline-block;background:var(--brand);color:white;padding:12px 18px;border-radius:8px;text-decoration:none}
+    .btn:hover{filter:brightness(.95)}
+    .section{max-width:1100px;margin:40px auto;padding:0 16px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+    .card{background:var(--card);border:1px solid #1f2937;border-radius:12px;padding:16px}
+    .card h3{margin:12px 0 6px}
+    footer{max-width:1100px;margin:60px auto 40px;padding:0 16px;text-align:center;opacity:.7}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <strong>College Fest</strong>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="project.html">Fest Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>Welcome to the College Fest</h1>
+      <p>Celebrate Culture, Code, and Sports — all in one epic fest!</p>
+      <a class="btn" href="project.html">Open Fest Gallery</a>
+    </section>
+
+    <section class="section">
+      <h2>Highlights</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Culture Fest</h3>
+          <p>Dance, music, and drama that light up the night.</p>
+        </div>
+        <div class="card">
+          <h3>Coding Contest</h3>
+          <p>Show your skills in a fast-paced coding showdown.</p>
+        </div>
+        <div class="card">
+          <h3>Sports Fest</h3>
+          <p>High-energy matches and nail-biting finals.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 College Fest</footer>
+</body>
+</html>

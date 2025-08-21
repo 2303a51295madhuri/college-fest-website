@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fest Gallery</title>
+  <style>
+    :root { --bg:#0f172a; --fg:#e2e8f0; --brand:#3b82f6; --card:#111827; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--fg)}
+    header{background:#0b1222;padding:20px 16px;position:sticky;top:0;z-index:10}
+    header .wrap{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+    nav a{color:var(--fg);text-decoration:none;margin-left:16px;opacity:.9}
+    nav a:hover{opacity:1;text-decoration:underline}
+    main{max-width:1100px;margin:32px auto;padding:0 16px}
+    h1,h2{margin:0 0 16px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+    .item{background:var(--card);border:1px solid #1f2937;border-radius:12px;overflow:hidden}
+    .item img{display:block;width:100%;height:auto}
+    .item .meta{padding:12px 14px}
+    .back{display:inline-block;margin-top:26px;background:var(--brand);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none}
+    .back:hover{filter:brightness(.95)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <strong>College Fest</strong>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="project.html">Fest Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Fest Gallery</h1>
+    <p>Enjoy moments from Culture Fest, Coding Contest, and Sports Fest.</p>
+
+    <section class="grid" aria-label="Gallery">
+      <figure class="item">
+        <img src="images/culture_fest.jpg" alt="Culture Fest performance on stage" />
+        <figcaption class="meta">
+          <h3>Culture Fest</h3>
+          <p>Cultural Dance Night</p>
+        </figcaption>
+      </figure>
+
+      <figure class="item">
+        <img src="images/coding_contest.jpg" alt="Students competing in a coding contest" />
+        <figcaption class="meta">
+          <h3>Coding Contest</h3>
+          <p>Intense Coding Contest</p>
+        </figcaption>
+      </figure>
+
+      <figure class="item">
+        <img src="images/sports_fest.jpg" alt="Sports Fest finals in the stadium" />
+        <figcaption class="meta">
+          <h3>Sports Fest</h3>
+          <p>Sports Finals</p>
+        </figcaption>
+      </figure>
+    </section>
+
+    <a class="back" href="index.html">⬅ Back to Home</a>
+  </main>
+</body>
+</html>
